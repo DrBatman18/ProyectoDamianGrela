@@ -668,7 +668,7 @@ footer{
 
     .titulo_contaco{
         color: white;
-        margin: 5% 0% 0% 5%;
+        margin: 0% 0% 0% 5%;
     }
 
     .lista_contacto{
@@ -678,7 +678,7 @@ footer{
     }
 
     .contacto {
-        margin: 5% 0% 20% 5%;
+        margin: 3% 0% 20% 5%;
     }
 
     .home_tienda{
@@ -701,6 +701,12 @@ footer{
         grid-area: hometienda1;
         height: 70%;
         width: 70%;
+        transition-duration: 2s;        
+    }
+
+    .img_t1:hover{
+        height: 90%;
+        width: 90%;
         
     }
 
@@ -719,6 +725,12 @@ footer{
         grid-area: hometienda2;
         height: 70%;
         width: 70%;
+        transition-duration: 2s;
+    }
+
+    .img_t2:hover{
+        height: 90%;
+        width: 90%;
     }
 
     .bt2{
@@ -735,7 +747,12 @@ footer{
         grid-area: hometienda3;
         height: 70%;
         width: 70%;
-       
+        transition-duration: 2s;
+    }
+
+    .img_t3:hover{
+        height: 90%;
+        width: 90%;
     }
 
     .bt3{
