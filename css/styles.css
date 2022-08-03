@@ -442,7 +442,7 @@ footer{
 @media only screen and (min-width:600px){
 
     .grilla_home{
-        grid-template-rows: 150px 1000px 150px;
+        grid-template-rows: 150px 1200px 150px;
         grid-template-columns: 100%;
         grid-template-areas: "header"
                               "main"
@@ -516,12 +516,12 @@ footer{
     .home_main {
         background-color: black;
         grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 30% 30% 30%;
+        grid-template-rows: 25% 25% 25%;
         grid-template-areas: "homemain1 homemain2 homemain3"
                              "homemain4 homemain5 homemain6"
                              "homemain7 homemain8 homemain9";
         align-content: space-around;
-        justify-content: space-around;
+        justify-content: space-evenly;
                              
 
     } 
@@ -539,7 +539,7 @@ footer{
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
-        
+                
     }
     .parrafos_home_main{
         font-family: Air Americana;
