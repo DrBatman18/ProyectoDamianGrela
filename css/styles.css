@@ -19,7 +19,7 @@ header{
 
 .boton_logo{
     display: flex;
-    padding: 5%;
+    
 }
 
 .home_main{
@@ -30,14 +30,6 @@ img{
     object-fit: cover;
 }
 
-iframe{
-    height: 50%;
-    width: 50%;
-    position: relative;
-    left: 25%;
-      
-    
-}
 
 footer{
     display: grid;
@@ -92,13 +84,15 @@ footer{
     }
 
     header{
-        height: 140px;
-        grid-template-columns: 20% 70%;
-        grid-template-rows: 100%;          
-        grid-template-areas: "logo nav";
+        height: 150px;
+        grid-template-rows: 70% 20%;
+        grid-template-columns: 100%;          
+        grid-template-areas: "logo" 
+                             "nav";
         align-content: center;
         justify-content: space-evenly;
-            
+        padding: 0%;
+        margin: 0%;    
               
     }
 
@@ -106,16 +100,16 @@ footer{
         position: relative;
         height: 100%;
         width: 100%;
-    
-    }
-    .logo{
-        position: relative;
-        height: 100%;
-        width: 100%;
+                    
     }
 
-    
-    
+    .logo{
+        position:relative;
+        height: 100%;
+        width: 100%;
+       
+    }
+        
     @font-face {
         font-family: 'Air Americana';
         src: url('../styles/Air\ Americana.ttf') format('truetype');
@@ -128,20 +122,20 @@ footer{
         height: 100%;
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
-        
+    
     }
     
     .lista_nav {
     
         position: relative;  
         list-style-type: none;
-        padding: 2px;
+        padding: 3px;   
         font-family: 'Air Americana';
-        font-size: 15px;
+        font-size: 20px;
                   
     }
     
@@ -308,9 +302,9 @@ footer{
     } 
        
     .img_carta{
-        height: 70%;
-        width: 70%;
-        margin-left: 15%;
+        height: 80%;
+        width: 80%;
+        margin-left: 10%;
 
     }
 
@@ -487,6 +481,7 @@ footer{
         position: relative;
         height: 100%;
         width: 100%;
+        padding: 5%;
     
     }
     .logo{
@@ -685,8 +680,8 @@ footer{
        
     .img_carta{
         height: 50%;
-        width: 50%; 
-        margin-left: 25%;
+        width: 70%; 
+        margin-left: 15%;
 
     }
     
