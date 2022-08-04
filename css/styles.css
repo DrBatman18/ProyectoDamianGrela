@@ -44,6 +44,7 @@ footer{
     background-color: black;
     border-top: 10px solid white;
 }
+
 .home_carta{
     display: grid;
 }
@@ -613,8 +614,7 @@ footer{
     .parrafo_datos_footer{
         margin-bottom: 10%;
         color: white;
-        font-size: 20px;
-        
+        font-size: 20px;        
 
     }
     
