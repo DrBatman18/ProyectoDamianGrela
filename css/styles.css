@@ -48,6 +48,7 @@ footer{
     display: grid;
 }
 
+
 .home_contactenos{
     display: grid;
 }
@@ -81,7 +82,7 @@ footer{
 @media only screen and (max-width:600px){
 
     .grilla_home{
-        grid-template-rows: 150px 700px 150px;
+        grid-template-rows: 150px 700px 300px;
         grid-template-columns: 100%;
         grid-template-areas: "header"
                               "main"
@@ -211,64 +212,75 @@ footer{
 
     footer{
         grid-area: footer;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 90%;          
-        grid-template-areas: "informacion botones mapa";
-        align-content: space-around;
-        justify-content: space-around;
+        grid-template-rows: 30% 10% 10% 10%;
+        grid-template-columns: 90%;          
+        grid-template-areas:"logo"
+                            "botones"
+                            "informcion"
+                            "redes";
+        align-content: space-evenly;
+        justify-content: space-evenly;
 
     }
 
-    .datos_footer{
+    .redes_footer{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: flex-start;    
+        justify-content: space-around; 
+        align-items: center;
+        margin: 0% 35% 0% 35%;
+                
 
     }
 
     .parrafo_datos_footer{
         margin-bottom: 10%;
         color: white;
-        font-size: 12px;
-        
+        font-size: 20px;       
 
     }
-
-   
-    .botones_footer {
     
+    .logo_footer{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .contener_lista_footer{
         height: 100%;
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
-        
-    }
+        padding: 0%;
+        margin: 0%;
 
+    }
+    
     .lista_footer{
-        flex-direction: column;
         list-style-type: none;        
         font-family: 'Air Americana';
         font-size: 20px;
+        padding-right: 3%;
 
     }
 
-    .ubicacion_footer{
+    .info_footer{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-evenly;
+        align-items: center;
+        font-size: 15px;
 
     }
 
     .parrafo_ubicacion_footer{
 
         color: white;
-        font-size: 15px;
+        font-size: 20px;
         text-align: center;
 
     }
@@ -277,6 +289,7 @@ footer{
         align-content:space-between ;
         justify-content: center;
     }
+   
 
     .home_carta {
         background-color: black;
@@ -442,7 +455,7 @@ footer{
 @media only screen and (min-width:600px){
 
     .grilla_home{
-        grid-template-rows: 150px 1200px 150px;
+        grid-template-rows: 150px 1200px 300px;
         grid-template-columns: 100%;
         grid-template-areas: "header"
                               "main"
@@ -554,6 +567,9 @@ footer{
         
     }
 
+    footer{
+        height: 300px;
+    }
     .parrafo_dos_home_main{
         grid-area: homemain3;
         background-color: black;
@@ -572,19 +588,25 @@ footer{
 
     footer{
         grid-area: footer;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 90%;          
-        grid-template-areas: "informacion botones mapa";
-        align-content: space-around;
-        justify-content: space-around;
+        grid-template-rows: 25% 10% 20% 20%;
+        grid-template-columns: 90%;          
+        grid-template-areas:"logo"
+                            "botones"
+                            "informcion"
+                            "redes";
+        align-content: space-evenly;
+        justify-content: space-evenly;
 
     }
 
-    .datos_footer{
+    .redes_footer{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: flex-end;    
+        justify-content: space-around; 
+        align-items: center;
+        margin: 0% 35% 0% 35%;
+             
 
     }
 
@@ -595,35 +617,40 @@ footer{
         
 
     }
-
-   
-    .botones_footer {
     
+    .logo_footer{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .contener_lista_footer{
         height: 100%;
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
-        
+        padding: 0%;
+        margin: 0%;
+
     }
-
+    
     .lista_footer{
-
-        position: relative;  
-        list-style-type: none;
-        padding: 2px;
+        list-style-type: none;        
         font-family: 'Air Americana';
         font-size: 20px;
+        padding-right: 3%;
 
     }
 
-    .ubicacion_footer{
+    .info_footer{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-evenly;
+        align-items: center;
+        font-size: 15px;
 
     }
 
@@ -635,27 +662,26 @@ footer{
 
     }
 
-    .mapa{
-        align-content:space-between ;
-        justify-content: center;
-    }
-
-    
+       
     .home_carta {
-        height: 2000px;
+        height: 1000px;
         background-color: black;
-        grid-template-columns: 45% 45%;
-        grid-template-rows: 30% 30% 30%;
-        grid-template-areas: "homecarta1 homecarta2"
-                             "homecarta3 homecarta4"
-                             "homecarta5 homecarta6";
+        grid-template-columns: 80%;
+        grid-template-rows: 80%;
+        grid-template-areas: "homecarta1";
         align-content: space-around;
         justify-content: space-around;
         padding: 0% 10% 0% 10%;
-                             
+                        
 
     } 
+       
+    .img_carta{
+        height: 100%;
+        width: 100%;
 
+    }
+    
     .home_contactenos{
         background-color: black;
         grid-template-columns: 90%;
