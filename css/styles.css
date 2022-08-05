@@ -84,15 +84,15 @@ footer{
     }
 
     header{
-        height: 150px;
+        height: 200px;
         grid-template-rows: 70% 20%;
         grid-template-columns: 100%;          
         grid-template-areas: "logo" 
                              "nav";
         align-content: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
         padding: 0%;
-        margin: 0%;    
+        margin: 0%;
               
     }
 
@@ -466,7 +466,7 @@ footer{
     }
 
     header{
-        height: 140px;
+        height: 200px;
         grid-template-columns: 20% 70%;
         grid-template-rows: 100%;          
         grid-template-areas: "logo nav";
@@ -517,7 +517,7 @@ footer{
         list-style-type: none;
         padding: 10px;  
         font-family: 'Air Americana';
-        font-size: 25px;
+        font-size: 35px;
                   
     }
     
@@ -680,8 +680,8 @@ footer{
        
     .img_carta{
         height: 50%;
-        width: 70%; 
-        margin-left: 15%;
+        width: 60%; 
+        margin-left: 20%;
 
     }
     
