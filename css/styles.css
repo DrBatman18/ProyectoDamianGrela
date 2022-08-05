@@ -75,7 +75,7 @@ footer{
 @media only screen and (max-width:600px){
 
     .grilla_home{
-        grid-template-rows: 150px 700px 300px;
+        grid-template-rows: 200px 700px 300px;
         grid-template-columns: 100%;
         grid-template-areas: "header"
                               "main"
@@ -457,7 +457,7 @@ footer{
 @media only screen and (min-width:600px){
 
     .grilla_home{
-        grid-template-rows: 150px 1200px 300px;
+        grid-template-rows: 200px 1200px 300px;
         grid-template-columns: 100%;
         grid-template-areas: "header"
                               "main"
