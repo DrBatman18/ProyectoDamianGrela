@@ -3,7 +3,7 @@
 @media only screen and (max-width:600px){
 
     .grilla_home{
-        grid-template-rows: 200px 1000px 300px;
+        grid-template-rows: 200px 3000px 300px;
         grid-template-columns: 100%;
         grid-template-areas: "header"
                               "main"
@@ -77,14 +77,20 @@
 
     .home_main {
         background-color: black;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 20% 20% 20%;
-        grid-template-areas: "homemain1 homemain2 homemain3"
-                             "homemain4 homemain5 homemain6"
-                             "homemain7 homemain8 homemain9";
-        align-content: space-around;
-        justify-content: space-around;
-        padding-top: 50%;                       
+        grid-template-rows: 5% 15% 5% 10% 10% 10% 10% 10% 10%;
+        grid-template-columns: 90%;
+        grid-template-areas: "homemain1" 
+                             "homemain2"
+                             "homemain3"
+                             "homemain4" 
+                             "homemain5" 
+                             "homemain6"
+                             "homemain7" 
+                             "homemain8" 
+                             "homemain9";
+        align-content: space-evenly;
+        justify-content: center;
+                          
 
     } 
 
