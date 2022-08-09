@@ -98,7 +98,7 @@ footer {
     grid-template-areas: "homemain1 homemain2 homemain3" "homemain4 homemain5 homemain6" "homemain7 homemain8 homemain9";
     align-content: space-around;
     justify-content: space-around;
-    margin-bottom: 50%; }
+    padding-top: 50%; }
   img {
     height: 100%;
     width: 100%;
