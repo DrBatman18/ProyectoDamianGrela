@@ -1,0 +1,805 @@
+
+
+@media only screen and (max-width:600px){
+
+    .grilla_home{
+        grid-template-rows: 200px 1000px 300px;
+        grid-template-columns: 100%;
+        grid-template-areas: "header"
+                              "main"
+                              "footer";
+
+    }
+
+    header{
+        height: 200px;
+        grid-template-rows: 70% 20%;
+        grid-template-columns: 100%;          
+        grid-template-areas: "logo" 
+                             "nav";
+        align-content: center;
+        justify-content: space-around;
+        padding: 0%;
+        margin: 0%;
+              
+    }
+
+    .logo_home{
+        position: relative;
+        height: 100%;
+        width: 100%;
+                    
+    }
+
+    .logo{
+        position:relative;
+        height: 100%;
+        width: 100%;
+       
+    }
+        
+    @font-face {
+        font-family: 'Air Americana';
+        src: url('../styles/Air\ Americana.ttf') format('truetype');
+        font-style: normal;        
+    
+    }
+    
+    .botones_nav {
+    
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .lista_nav {
+    
+        position: relative;  
+        list-style-type: none;
+        padding: 3px;   
+        font-family: 'Air Americana';
+        font-size: 20px;
+                  
+    }
+    
+    .nombre_boton_nav{
+    
+       text-decoration: none;
+       color: red;
+    
+        
+    }
+
+    .home_main {
+        background-color: black;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 30% 30% 30%;
+        grid-template-areas: "homemain1 homemain2 homemain3"
+                             "homemain4 homemain5 homemain6"
+                             "homemain7 homemain8 homemain9";
+        align-content: space-around;
+        justify-content: space-around;
+                        
+
+    } 
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .parrafo_uno_home_main {
+        grid-area: homemain1;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 40%;
+              
+        
+    }
+
+    .parrafos_home_main{
+        font-family: Air Americana;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+                
+    }
+
+    .img_gato{
+        grid-area:homemain2;
+        margin-bottom: 40%;
+        
+    }
+
+    .parrafo_dos_home_main{
+        grid-area: homemain3;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 40%;
+        
+    }
+
+    .img_what{
+
+        grid-area: homemain4;
+        margin-top: 50%;
+    }
+
+    .img_the{
+
+        grid-area: homemain5;
+        margin-top: 50%;
+    }
+
+    .img_fack{
+
+        grid-area: homemain6;
+        margin-top: 50%;
+    }
+    
+    .img_plato {
+
+        grid-area: homemain7;
+        margin-top: 50%;
+    }
+    
+    .img_sushi {
+
+        grid-area: homemain8;
+        margin-top: 50%;
+    }
+
+    .img_platodos {
+
+        grid-area: homemain9;
+        margin-top: 50%;
+    }
+
+    footer{
+        grid-area: footer;
+        grid-template-rows: 30% 10% 10% 10%;
+        grid-template-columns: 90%;          
+        grid-template-areas:"logo"
+                            "botones"
+                            "informcion"
+                            "redes";
+        align-content: space-evenly;
+        justify-content: space-evenly;
+
+    }
+
+    .redes_footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around; 
+        align-items: center;
+        margin: 0% 20% 0% 20%;
+                
+
+    }
+
+    .parrafo_datos_footer{
+        margin-bottom: 10%;
+        color: white;
+        font-size: 20px;       
+
+    }
+    
+    .logo_footer{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .contener_lista_footer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0%;
+        margin: 0%;
+
+    }
+    
+    .lista_footer{
+        list-style-type: none;        
+        font-family: 'Air Americana';
+        font-size: 20px;
+        padding-right: 3%;
+
+    }
+
+    .info_footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 12px;
+        color: white;
+    }
+    
+    
+
+    .parrafo_ubicacion_footer{
+
+        color: white;
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+    .mapa{
+        align-content:space-between ;
+        justify-content: center;
+    }
+   
+
+    .home_carta {
+        height: 500px;
+        background-color: black;
+        grid-template-columns: 80%;
+        grid-template-rows: 80%;
+        grid-template-areas: "homecarta1";
+        align-content: space-around;
+        justify-content: space-around;
+        padding: 0% 10% 0% 10%;
+                        
+
+    } 
+       
+    
+
+    .home_contactenos{
+        background-color: black;
+        grid-template-columns: 90%;
+        grid-template-rows: 80% ;
+        grid-template-areas: "homecontaco1";                             
+        align-content: space-around;
+        justify-content: space-around;
+               
+    }
+
+    .titulo_contaco{
+        color: white;
+        margin: 5% 0% 0% 5%;
+    }
+
+    .lista_contacto{
+        color: white;
+        list-style: none;
+        
+    }
+
+    .contacto {
+        margin: 5% 0% 20% 5%;
+    }
+
+
+
+    .home_tienda{
+        background-color: black;
+        grid-template-columns: 90%;
+        grid-template-rows: 25% 25% 25%;
+        grid-template-areas: "hometienda1"
+                             "hometienda2" 
+                             "hometienda3";                             
+        align-content: space-around;
+        justify-content: space-around;
+    }
+
+    .parrafo_t1{
+        grid-area: hometienda1;
+        color: white;
+        font-size: 20px;      
+        
+    }
+
+    .img_t1{
+        grid-area: hometienda1;
+        height: 70%;
+        width: 70%;
+        
+    }
+
+    .bt1{
+        grid-area: hometienda1;
+        width: 30%;
+    }
+
+    .parrafo_t2{
+        grid-area: hometienda2;
+        color: white;
+        font-size: 20px;
+    }
+
+    .img_t2{
+        grid-area: hometienda2;
+        height: 70%;
+        width: 70%;
+    }
+
+    .bt2{
+        grid-area: hometienda2;
+        width: 30%;
+    }
+
+    .parrafo_t3{
+        grid-area: hometienda3;
+        color: white;
+        font-size: 20px;
+    }
+    .img_t3{
+        grid-area: hometienda3;
+        height: 70%;
+        width: 70%;
+       
+    }
+
+    .bt3{
+        grid-area: hometienda3;
+        width: 30%;
+        
+    }
+
+    .tienda_uno{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .tienda_dos{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .tienda_tres{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .home_nosotros{
+        background-color: black;
+        height: 1000px;
+        grid-template-columns: 90%;
+        grid-template-rows: 60%;
+        grid-template-areas: "homenos1"; 
+        align-content: space-around;                            
+        justify-content: center;
+        
+        
+    }
+
+    .nosotros_uno{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 5% 0% 5% 0%;
+    }
+
+    .parrafo_nos1{
+        color: white;
+        text-align: center;
+    }
+
+    .img_nos1{
+        object-fit: cover;
+        
+    }
+
+       
+}
+
+@media only screen and (min-width:600px){
+
+    
+    .grilla_home{
+
+        grid-template-rows: 200px 1200px 300px;
+        grid-template-columns: 100%;
+        grid-template-areas: "header"
+                              "main"
+                              "footer";
+
+    }
+
+    header{
+        height: 200px;
+        grid-template-columns: 20% 70%;
+        grid-template-rows: 100%;          
+        grid-template-areas: "logo nav";
+        align-content: center;
+        justify-content: space-evenly;
+        
+        
+              
+    }
+
+    .logo_home{
+        position: relative; 
+        height: 100%;
+        width: 100%;
+        padding: 5%;
+    
+    }
+    .logo{
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    
+    
+    @font-face {
+        font-family: 'Air Americana';
+        src: url('../styles/Air\ Americana.ttf') format('truetype');
+        font-style: normal;        
+    
+    }
+    
+    .botones_nav {
+    
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .lista_nav {
+    
+        position: relative;  
+        list-style-type: none;
+        padding: 10px;  
+        font-family: 'Air Americana';
+        font-size: 35px;
+                  
+    }
+    
+    .nombre_boton_nav{
+    
+       text-decoration: none;
+       color: red;
+    
+        
+    }
+
+    .home_main {
+        background-color: black;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 25% 25% 25%;
+        grid-template-areas: "homemain1 homemain2 homemain3"
+                             "homemain4 homemain5 homemain6"
+                             "homemain7 homemain8 homemain9";
+        align-content: space-around;
+        justify-content: space-evenly;
+                             
+
+    } 
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .parrafo_uno_home_main{
+        grid-area: homemain1;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+                
+    }
+    .parrafos_home_main{
+        font-family: Air Americana;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+
+    .img_gato{
+        grid-area:homemain2;
+        
+    }
+
+    footer{
+        height: 300px;
+    }
+    .parrafo_dos_home_main{
+        grid-area: homemain3;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        
+    }
+
+    .img_what{
+
+        grid-area: homemain4;
+    }
+
+    footer{
+        grid-area: footer;
+        grid-template-rows: 25% 10% 20% 20%;
+        grid-template-columns: 90%;          
+        grid-template-areas:"logo"
+                            "botones"
+                            "informcion"
+                            "redes";
+        align-content: space-evenly;
+        justify-content: space-evenly;
+
+    }
+
+    .redes_footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around; 
+        align-items: center;
+        margin: 0% 35% 0% 35%;
+             
+
+    }
+
+    .parrafo_datos_footer{
+        margin-bottom: 10%;
+        color: white;
+        font-size: 20px;        
+
+    }
+    
+    .logo_footer{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .contener_lista_footer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0%;
+        margin: 0%;
+
+    }
+    
+    .lista_footer{
+        list-style-type: none;        
+        font-family: 'Air Americana';
+        font-size: 20px;
+        padding-right: 3%;
+
+    }
+
+    .info_footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 15px;
+        color: white;
+    }
+
+    .parrafo_ubicacion_footer{
+
+        color: white;
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+       
+    .home_carta {
+        height: 1000px;
+        background-color: black;
+        grid-template-columns: 80%;
+        grid-template-rows: 80%;
+        grid-template-areas: "homecarta1";
+        align-content: space-around;
+        justify-content: space-around;
+        padding: 0% 10% 0% 10%; 
+                        
+
+    } 
+       
+    .img_carta{
+        height: 50%;
+        width: 60%; 
+        margin-left: 20%;
+
+    }
+    
+    .home_contactenos{
+        background-color: black;
+        grid-template-columns: 90%;
+        grid-template-rows: 80% ;
+        grid-template-areas: "homecontaco1";                             
+        align-content: space-around;
+        justify-content: space-around;
+               
+    }
+
+    .titulo_contaco{
+        color: white;
+        margin: 0% 0% 0% 5%;
+    }
+
+    .lista_contacto{
+        color: white;
+        list-style: none;
+        
+    }
+
+    .contacto {
+        margin: 3% 0% 20% 5%;
+    }
+
+    .home_tienda{
+        background-color: black;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 90%;
+        grid-template-areas: "hometienda1 hometienda2 hometienda3";                             
+        align-content: space-around;
+        justify-content: space-around;
+    }
+
+    .parrafo_t1{
+        grid-area: hometienda1;
+        color: white;
+        font-size: 20px;      
+        
+    }
+
+    .img_t1{
+        grid-area: hometienda1;
+        height: 70%;
+        width: 70%;
+        transition-duration: 2s;        
+    }
+
+    .img_t1:hover{
+        height: 90%;
+        width: 90%;
+        
+    }
+
+    .bt1{
+        grid-area: hometienda1;
+        width: 30%;
+    }
+
+    .parrafo_t2{
+        grid-area: hometienda2;
+        color: white;
+        font-size: 20px;
+    }
+
+    .img_t2{
+        grid-area: hometienda2;
+        height: 70%;
+        width: 70%;
+        transition-duration: 2s;
+    }
+
+    .img_t2:hover{
+        height: 90%;
+        width: 90%;
+    }
+
+    .bt2{
+        grid-area: hometienda2;
+        width: 30%;
+    }
+
+    .parrafo_t3{
+        grid-area: hometienda3;
+        color: white;
+        font-size: 20px;
+    }
+    .img_t3{
+        grid-area: hometienda3;
+        height: 70%;
+        width: 70%;
+        transition-duration: 2s;
+    }
+
+    .img_t3:hover{
+        height: 90%;
+        width: 90%;
+    }
+
+    .bt3{
+        grid-area: hometienda3;
+        width: 30%;
+        
+    }
+
+    .tienda_uno{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .tienda_dos{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .tienda_tres{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .home_nosotros{
+        background-color: black;
+        height: 700px;
+        grid-template-columns: 90%;
+        grid-template-rows: 60%;
+        grid-template-areas: "homenos1"; 
+        align-content: space-around;                            
+        justify-content: center;
+        
+        
+
+    }
+
+    .nosotros_uno{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+    .parrafo_nos1{
+        color: white;
+        text-align: center;
+    }
+
+    .img_nos1{
+        height: 50%;
+        width: 70%;
+    }
+    
+}

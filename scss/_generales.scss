@@ -1,0 +1,71 @@
+*{
+
+    margin: 0%;
+    padding: 0%;
+}
+
+.grilla_home{
+    display: grid;
+}
+
+
+header{
+    display: grid; 
+    background-color: black;
+    border-bottom: 10px solid white;
+    
+}
+
+.boton_logo{
+    display: flex;
+    
+}
+
+.home_main{
+    display: grid;
+}
+
+img{
+    object-fit: cover;
+}
+
+
+footer{
+    display: grid;
+    background-color: black;
+    border-top: 10px solid white;
+}
+
+.home_carta{
+    display: grid;
+}
+
+
+.home_contactenos{
+    display: grid;
+}
+
+.home_tienda{
+    display: grid;
+}
+
+.tienda_uno{
+    display: flex;
+}
+
+.tienda_dos{
+    display: flex;
+}
+.tienda_tres{
+    display: flex;
+}
+
+.home_nosotros{
+    display: grid;
+
+}
+
+.nosotros_uno{
+    display: flex;
+
+}
