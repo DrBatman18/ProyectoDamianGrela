@@ -94,10 +94,11 @@ footer {
   .home_main {
     background-color: black;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 30% 30% 30%;
+    grid-template-rows: 20% 20% 20%;
     grid-template-areas: "homemain1 homemain2 homemain3" "homemain4 homemain5 homemain6" "homemain7 homemain8 homemain9";
     align-content: space-around;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin-bottom: 50%; }
   img {
     height: 100%;
     width: 100%;
@@ -108,16 +109,14 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
-    margin-bottom: 40%; }
+    justify-content: center; }
   .parrafos_home_main {
     font-family: Air Americana;
     color: white;
     font-size: 20px;
     text-align: center; }
   .img_gato {
-    grid-area: homemain2;
-    margin-bottom: 40%; }
+    grid-area: homemain2; }
   .parrafo_dos_home_main {
     grid-area: homemain3;
     background-color: black;
@@ -125,26 +124,19 @@ footer {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    align-content: center;
-    margin-bottom: 40%; }
+    align-content: center; }
   .img_what {
-    grid-area: homemain4;
-    margin-top: 50%; }
+    grid-area: homemain4; }
   .img_the {
-    grid-area: homemain5;
-    margin-top: 50%; }
+    grid-area: homemain5; }
   .img_fack {
-    grid-area: homemain6;
-    margin-top: 50%; }
+    grid-area: homemain6; }
   .img_plato {
-    grid-area: homemain7;
-    margin-top: 50%; }
+    grid-area: homemain7; }
   .img_sushi {
-    grid-area: homemain8;
-    margin-top: 50%; }
+    grid-area: homemain8; }
   .img_platodos {
-    grid-area: homemain9;
-    margin-top: 50%; }
+    grid-area: homemain9; }
   footer {
     grid-area: footer;
     grid-template-rows: 30% 10% 10% 10%;
