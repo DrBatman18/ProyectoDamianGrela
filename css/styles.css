@@ -81,11 +81,12 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    padding: 0%; }
   .lista_nav {
     position: relative;
     list-style-type: none;
-    padding: 3px;
+    padding: 7px;
     font-family: 'Air Americana';
     font-size: 20px; }
   .nombre_boton_nav {
