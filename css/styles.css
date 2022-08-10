@@ -48,9 +48,18 @@ footer {
 .nosotros_uno {
   display: flex; }
 
+@font-face {
+  font-family: 'Air Americana';
+  src: url("../styles/Air Americana.ttf") format("truetype");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'lora';
+  src: url("../styles/Lora-Italic-VariableFont_wght.ttf") format("truetype"); }
+
 @media only screen and (max-width: 600px) {
   .grilla_home {
-    grid-template-rows: 200px 3000px 300px;
+    grid-template-rows: 200px 2500px 300px;
     grid-template-columns: 100%;
     grid-template-areas: "header" "main" "footer"; }
   header {
@@ -70,10 +79,6 @@ footer {
     position: relative;
     height: 100%;
     width: 100%; }
-  @font-face {
-    font-family: 'Air Americana';
-    src: url("../styles/Air Americana.ttf") format("truetype");
-    font-style: normal; }
   .botones_nav {
     height: 100%;
     width: 100%;
@@ -151,10 +156,6 @@ footer {
     justify-content: space-around;
     align-items: center;
     margin: 0% 20% 0% 20%; }
-  .parrafo_datos_footer {
-    margin-bottom: 10%;
-    color: white;
-    font-size: 20px; }
   .logo_footer {
     height: 100%;
     width: 100%; }
@@ -180,14 +181,8 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     font-size: 12px;
-    color: white; }
-  .parrafo_ubicacion_footer {
     color: white;
-    font-size: 20px;
-    text-align: center; }
-  .mapa {
-    align-content: space-between;
-    justify-content: center; }
+    font-family: 'lora'; }
   .home_carta {
     height: 500px;
     background-color: black;
@@ -308,10 +303,6 @@ footer {
     position: relative;
     height: 100%;
     width: 100%; }
-  @font-face {
-    font-family: 'Air Americana';
-    src: url("../styles/Air Americana.ttf") format("truetype");
-    font-style: normal; }
   .botones_nav {
     height: 100%;
     width: 100%;
@@ -409,11 +400,8 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     font-size: 15px;
-    color: white; }
-  .parrafo_ubicacion_footer {
     color: white;
-    font-size: 20px;
-    text-align: center; }
+    font-family: 'lora'; }
   .home_carta {
     height: 1000px;
     background-color: black;

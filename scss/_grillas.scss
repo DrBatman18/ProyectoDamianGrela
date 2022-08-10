@@ -3,7 +3,7 @@
 @media only screen and (max-width:600px){
 
     .grilla_home{
-        grid-template-rows: 200px 3000px 300px;
+        grid-template-rows: 200px 2500px 300px;
         grid-template-columns: 100%;
         grid-template-areas: "header"
                               "main"
@@ -38,13 +38,7 @@
        
     }
         
-    @font-face {
-        font-family: 'Air Americana';
-        src: url('../styles/Air\ Americana.ttf') format('truetype');
-        font-style: normal;        
-    
-    }
-    
+      
     .botones_nav {
     
         height: 100%;
@@ -70,7 +64,7 @@
     .nombre_boton_nav{
     
        text-decoration: none;
-       color: red;
+       color: $color_texto_nav;
     
         
     }
@@ -198,12 +192,7 @@
 
     }
 
-    .parrafo_datos_footer{
-        margin-bottom: 10%;
-        color: white;
-        font-size: 20px;       
-
-    }
+    
     
     .logo_footer{
         height: 100%;
@@ -238,24 +227,11 @@
         justify-content: space-evenly;
         align-items: center;
         font-size: 12px;
-        color: white;
+        color: $color_texto_parrafo;
+        font-family: 'lora';
     }
     
-    
-
-    .parrafo_ubicacion_footer{
-
-        color: white;
-        font-size: 20px;
-        text-align: center;
-
-    }
-
-    .mapa{
-        align-content:space-between ;
-        justify-content: center;
-    }
-   
+       
 
     .home_carta {
         height: 500px;
@@ -283,12 +259,12 @@
     }
 
     .titulo_contaco{
-        color: white;
+        color: $color_texto_parrafo;
         margin: 5% 0% 0% 5%;
     }
 
     .lista_contacto{
-        color: white;
+        color: $color_texto_parrafo;
         list-style: none;
         
     }
@@ -312,7 +288,7 @@
 
     .parrafo_t1{
         grid-area: hometienda1;
-        color: white;
+        color: $color_texto_parrafo;
         font-size: 20px;      
         
     }
@@ -331,7 +307,7 @@
 
     .parrafo_t2{
         grid-area: hometienda2;
-        color: white;
+        color: $color_texto_parrafo;
         font-size: 20px;
     }
 
@@ -348,7 +324,7 @@
 
     .parrafo_t3{
         grid-area: hometienda3;
-        color: white;
+        color: $color_texto_parrafo;
         font-size: 20px;
     }
     .img_t3{
@@ -406,7 +382,7 @@
     }
 
     .parrafo_nos1{
-        color: white;
+        color: $color_texto_parrafo;
         text-align: center;
     }
 
@@ -454,17 +430,8 @@
         position: relative;
         height: 100%;
         width: 100%;
-    }
-
-    
-    
-    @font-face {
-        font-family: 'Air Americana';
-        src: url('../styles/Air\ Americana.ttf') format('truetype');
-        font-style: normal;        
-    
-    }
-    
+    } 
+   
     .botones_nav {
     
         height: 100%;
@@ -490,7 +457,7 @@
     .nombre_boton_nav{
     
        text-decoration: none;
-       color: red;
+       color: $color_texto_nav;
     
         
     }
@@ -525,7 +492,7 @@
     }
     .parrafos_home_main{
         font-family: Air Americana;
-        color: white;
+        color: $color_texto_parrafo;
         font-size: 20px;
         text-align: center;
         
@@ -581,7 +548,7 @@
 
     .parrafo_datos_footer{
         margin-bottom: 10%;
-        color: white;
+        color: $color_texto_parrafo;
         font-size: 20px;        
 
     }
@@ -619,17 +586,11 @@
         justify-content: space-evenly;
         align-items: center;
         font-size: 15px;
-        color: white;
+        color: $color_texto_parrafo;
+        font-family:'lora' ;
     }
 
-    .parrafo_ubicacion_footer{
-
-        color: white;
-        font-size: 20px;
-        text-align: center;
-
-    }
-
+    
        
     .home_carta {
         height: 1000px;
@@ -662,12 +623,12 @@
     }
 
     .titulo_contaco{
-        color: white;
+        color: $color_texto_parrafo;
         margin: 0% 0% 0% 5%;
     }
 
     .lista_contacto{
-        color: white;
+        color: $color_texto_parrafo;
         list-style: none;
         
     }
@@ -687,7 +648,7 @@
 
     .parrafo_t1{
         grid-area: hometienda1;
-        color: white;
+        color: $color_texto_parrafo;
         font-size: 20px;      
         
     }
@@ -712,7 +673,7 @@
 
     .parrafo_t2{
         grid-area: hometienda2;
-        color: white;
+        color: $color_texto_parrafo;
         font-size: 20px;
     }
 
@@ -735,7 +696,7 @@
 
     .parrafo_t3{
         grid-area: hometienda3;
-        color: white;
+        color: $color_texto_parrafo;
         font-size: 20px;
     }
     .img_t3{
@@ -799,7 +760,7 @@
     }
 
     .parrafo_nos1{
-        color: white;
+        color: $color_texto_parrafo;
         text-align: center;
     }
 
