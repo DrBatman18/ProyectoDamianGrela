@@ -3,7 +3,7 @@
 @media only screen and (max-width:600px){
 
     .grilla_home{
-        grid-template-rows: 200px 2500px 300px;
+        grid-template-rows: 200px 3000px 300px;
         grid-template-columns: 100%;
         grid-template-areas: "header"
                               "main"
@@ -66,8 +66,8 @@
 
     .home_main {
         background-color: black;
-        grid-template-rows: 5% 15% 5% 10% 10% 10% 10% 10% 10%;
-        grid-template-columns: 90%;
+        grid-template-rows: 5% 10% 5% 10% 10% 10% 10% 10% 10%;
+        grid-template-columns: 80%;
         grid-template-areas: "homemain1" 
                              "homemain2"
                              "homemain3"
@@ -86,20 +86,21 @@
             object-fit: contain;
         }
 
-        .parrafo_uno_home_main {
-            grid-area: homemain1;
+        .parrafo_home_600max{
             background-color: black;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            justify-content: center;                             
+            justify-content: center;
+            align-content: center;  
         }
-    
+        .parrafo_uno_home_main {
+            grid-area: homemain1;
+            @extend .parrafo_home_600max;                            
+        }
+        
         .parrafos_home_main{
-            font-family: Air Americana;
-            color: white;
-            font-size: 20px;
-            text-align: center;                    
+            @include estilo_letra(white,20px)              
         }
     
         .img_gato{
@@ -108,12 +109,7 @@
     
         .parrafo_dos_home_main{
             grid-area: homemain3;
-            background-color: black;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-content: center;                        
+            @extend .parrafo_home_600max;                        
         }
     
         .img_what{    
@@ -176,7 +172,7 @@
                 list-style-type: none;        
                 font-family: 'Air Americana';
                 font-size: 20px;
-                padding-right: 3%;        
+                padding: 3%;
             }
         }
 
@@ -352,7 +348,7 @@
 @media only screen and (min-width:600px){
     
     .grilla_home{
-        grid-template-rows: 200px 1200px 250px;
+        grid-template-rows: 200px 1500px 250px;
         grid-template-columns: 100%;
         grid-template-areas: "header"
                               "main"
@@ -424,31 +420,30 @@
             width: 100%;
             object-fit: contain;
         }
-        .parrafo_uno_home_main{
-            grid-area: homemain1;
+
+        .parrafo_home_600min{
             background-color: black;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            justify-content: center;          
+            justify-content: center;
+            align-content: center;
+
         }
+        .parrafo_uno_home_main{
+            grid-area: homemain1;
+            @extend .parrafo_home_600min;         
+        }
+
         .parrafos_home_main{
-            font-family: Air Americana;
-            color: $color_texto_parrafo;
-            font-size: 20px;
-            text-align: center;        
+            @include estilo_letra(white,20px)      
         }
         .img_gato{
             grid-area:homemain2;            
         }
         .parrafo_dos_home_main{
             grid-area: homemain3;
-            background-color: black;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-content: center;        
+            @extend .parrafo_home_600min;         
         }
         .img_what{
             grid-area: homemain4;
@@ -503,7 +498,7 @@
                 list-style-type: none;        
                 font-family: 'Air Americana';
                 font-size: 20px;
-                padding-right: 3%;        
+                padding: 3%;        
             }
         }
         .info_footer{

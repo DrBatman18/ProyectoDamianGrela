@@ -1,3 +1,11 @@
 
 $color_texto_nav: red;
 $color_texto_parrafo: white;
+
+@mixin estilo_letra ($color_letra, $tamanio_letra){ 
+    font-family: Air Americana;
+    color: $color_letra;
+    font-size: $tamanio_letra;
+    text-align: center; 
+
+}

@@ -79,7 +79,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .grilla_home {
-    grid-template-rows: 200px 2500px 300px;
+    grid-template-rows: 200px 3000px 300px;
     grid-template-columns: 100%;
     grid-template-areas: "header" "main" "footer"; }
   header {
@@ -117,8 +117,8 @@ footer {
       font-size: 20px; }
   .home_main {
     background-color: black;
-    grid-template-rows: 5% 15% 5% 10% 10% 10% 10% 10% 10%;
-    grid-template-columns: 90%;
+    grid-template-rows: 5% 10% 5% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: 80%;
     grid-template-areas: "homemain1"  "homemain2" "homemain3" "homemain4"  "homemain5"  "homemain6" "homemain7"  "homemain8"  "homemain9";
     align-content: space-evenly;
     justify-content: center; }
@@ -126,13 +126,15 @@ footer {
       height: 100%;
       width: 100%;
       object-fit: contain; }
-    .home_main .parrafo_uno_home_main {
-      grid-area: homemain1;
+    .home_main .parrafo_home_600max, .home_main .parrafo_uno_home_main, .home_main .parrafo_dos_home_main {
       background-color: black;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
-      justify-content: center; }
+      justify-content: center;
+      align-content: center; }
+    .home_main .parrafo_uno_home_main {
+      grid-area: homemain1; }
     .home_main .parrafos_home_main {
       font-family: Air Americana;
       color: white;
@@ -141,13 +143,7 @@ footer {
     .home_main .img_gato {
       grid-area: homemain2; }
     .home_main .parrafo_dos_home_main {
-      grid-area: homemain3;
-      background-color: black;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-content: center; }
+      grid-area: homemain3; }
     .home_main .img_what {
       grid-area: homemain4; }
     .home_main .img_the {
@@ -185,7 +181,7 @@ footer {
         list-style-type: none;
         font-family: 'Air Americana';
         font-size: 20px;
-        padding-right: 3%; }
+        padding: 3%; }
     footer .info_footer {
       display: flex;
       flex-direction: column;
@@ -308,7 +304,7 @@ footer {
 
 @media only screen and (min-width: 600px) {
   .grilla_home {
-    grid-template-rows: 200px 1200px 250px;
+    grid-template-rows: 200px 1500px 250px;
     grid-template-columns: 100%;
     grid-template-areas: "header" "main" "footer"; }
   header {
@@ -358,13 +354,15 @@ footer {
       height: 100%;
       width: 100%;
       object-fit: contain; }
-    .home_main .parrafo_uno_home_main {
-      grid-area: homemain1;
+    .home_main .parrafo_home_600min, .home_main .parrafo_uno_home_main, .home_main .parrafo_dos_home_main {
       background-color: black;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
-      justify-content: center; }
+      justify-content: center;
+      align-content: center; }
+    .home_main .parrafo_uno_home_main {
+      grid-area: homemain1; }
     .home_main .parrafos_home_main {
       font-family: Air Americana;
       color: white;
@@ -373,13 +371,7 @@ footer {
     .home_main .img_gato {
       grid-area: homemain2; }
     .home_main .parrafo_dos_home_main {
-      grid-area: homemain3;
-      background-color: black;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-content: center; }
+      grid-area: homemain3; }
     .home_main .img_what {
       grid-area: homemain4; }
     .home_main .img_the {
@@ -417,7 +409,7 @@ footer {
         list-style-type: none;
         font-family: 'Air Americana';
         font-size: 20px;
-        padding-right: 3%; }
+        padding: 3%; }
     footer .info_footer {
       display: flex;
       flex-direction: column;
