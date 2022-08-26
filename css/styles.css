@@ -99,7 +99,8 @@ footer {
       header .boton_logo img {
         position: relative;
         height: 100%;
-        width: 100%; }
+        width: 100%;
+        object-fit: contain; }
     header nav .botones_nav {
       height: 100%;
       width: 100%;
