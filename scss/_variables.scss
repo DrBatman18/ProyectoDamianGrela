@@ -9,3 +9,33 @@ $color_texto_parrafo: white;
     text-align: center; 
 
 }
+
+@mixin titulo_platos ($color_letra, $tamanio_letra){ 
+    font-family: Air Americana;
+    color: $color_letra;
+    font-size: $tamanio_letra;
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+@mixin parrafo_platos($color_letra, $tamanio_letra) {
+    color: $color_letra;
+    font-size: $tamanio_letra;
+    text-align: center;    
+}
+
+
+@mixin btn_platos ($transicion){
+    &:hover{
+        width: 50%;
+        background-color: red;
+    }    
+}
+
+@mixin img_platos ($altoimgplatos, $anchoimgplatos, $contenedorimgplatos){
+    height: $altoimgplatos ;
+    width: $anchoimgplatos;
+    object-fit: $contenedorimgplatos;
+    
+}
