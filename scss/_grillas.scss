@@ -79,7 +79,7 @@
                              "homemain8" 
                              "homemain9";
         align-content: space-evenly;
-        justify-content: center;
+        justify-content: space-around;
                           
         img{
             height: 100%;
@@ -218,25 +218,26 @@
            
     .home_contactenos{
         background-color: black;
-        grid-template-columns: 90%;
-        grid-template-rows: 80% ;
-        grid-template-areas: "homecontaco1";                             
+        flex-direction:column;
+        flex-wrap: nowrap;                         
         align-content: space-around;
         justify-content: space-around;
-               
-        .titulo_contaco{
-            color: $color_texto_parrafo;
-            margin: 5% 0% 0% 5%;
-        }
 
-        .contacto {
-            margin: 5% 0% 20% 5%;
-        }
 
-        .lista_contacto{
-            color: $color_texto_parrafo;
-            list-style: none;            
-        }
+        .formulario{
+            .titulo_contaco{
+                color: $color_texto_parrafo;
+                margin: 5% 0% 5% 10%;
+            }
+            .contacto {
+                margin: 5% 0% 5% 10%;
+            }
+            .lista_contacto{
+                font-family: Arial, Helvetica, sans-serif;
+                color: $color_texto_parrafo;
+                list-style: none;                
+            }
+        }   
     }
 
     .home_tienda{
@@ -624,9 +625,8 @@
             
     .home_contactenos{
         background-color: black;
-        grid-template-columns: 90%;
-        grid-template-rows: 80% ;
-        grid-template-areas: "homecontaco1";                             
+        flex-direction:column;
+        flex-wrap: nowrap;                         
         align-content: space-around;
         justify-content: space-around;
 
@@ -634,12 +634,13 @@
         .formulario{
             .titulo_contaco{
                 color: $color_texto_parrafo;
-                margin: 0% 0% 0% 5%;
+                margin: 5% 0% 5% 10%;
             }
             .contacto {
-                margin: 3% 0% 20% 5%;
+                margin: 5% 0% 5% 10%;
             }
             .lista_contacto{
+                font-family: Arial, Helvetica, sans-serif;
                 color: $color_texto_parrafo;
                 list-style: none;                
             }

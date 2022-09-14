@@ -3,6 +3,10 @@ h2 {
   color: red;
   font-size: 40px; }
 
+h1 {
+  font-family: Air Americana;
+  font-size: 50px; }
+
 * {
   margin: 0%;
   padding: 0%; }
@@ -41,7 +45,7 @@ footer {
   display: grid; }
 
 .home_contactenos {
-  display: grid; }
+  display: flex; }
 
 .home_tienda {
   display: grid; }
@@ -58,6 +62,10 @@ footer {
 
 .nosotros_uno {
   display: flex; }
+
+ul {
+  margin: 0%;
+  padding: 0%; }
 
 @media only screen and (max-width: 600px) {
   header {
@@ -129,7 +137,7 @@ footer {
     grid-template-columns: 80%;
     grid-template-areas: "homemain1"  "homemain2" "homemain3" "homemain4"  "homemain5"  "homemain6" "homemain7"  "homemain8"  "homemain9";
     align-content: space-evenly;
-    justify-content: center; }
+    justify-content: space-around; }
     .home_main img {
       height: 100%;
       width: 100%;
@@ -221,17 +229,17 @@ footer {
       margin-left: 20%; }
   .home_contactenos {
     background-color: black;
-    grid-template-columns: 90%;
-    grid-template-rows: 80%;
-    grid-template-areas: "homecontaco1";
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-content: space-around;
     justify-content: space-around; }
-    .home_contactenos .titulo_contaco {
+    .home_contactenos .formulario .titulo_contaco {
       color: white;
-      margin: 5% 0% 0% 5%; }
-    .home_contactenos .contacto {
-      margin: 5% 0% 20% 5%; }
-    .home_contactenos .lista_contacto {
+      margin: 5% 0% 5% 10%; }
+    .home_contactenos .formulario .contacto {
+      margin: 5% 0% 5% 10%; }
+    .home_contactenos .formulario .lista_contacto {
+      font-family: Arial, Helvetica, sans-serif;
       color: white;
       list-style: none; }
   .home_tienda {
@@ -483,17 +491,17 @@ footer {
       margin-left: 20%; }
   .home_contactenos {
     background-color: black;
-    grid-template-columns: 90%;
-    grid-template-rows: 80%;
-    grid-template-areas: "homecontaco1";
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-content: space-around;
     justify-content: space-around; }
     .home_contactenos .formulario .titulo_contaco {
       color: white;
-      margin: 0% 0% 0% 5%; }
+      margin: 5% 0% 5% 10%; }
     .home_contactenos .formulario .contacto {
-      margin: 3% 0% 20% 5%; }
+      margin: 5% 0% 5% 10%; }
     .home_contactenos .formulario .lista_contacto {
+      font-family: Arial, Helvetica, sans-serif;
       color: white;
       list-style: none; }
   .home_tienda {

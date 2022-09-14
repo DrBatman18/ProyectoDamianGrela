@@ -54,7 +54,7 @@ footer{
 
 
 .home_contactenos{
-    display: grid;
+    display: flex;
 }
 
 .home_tienda{
@@ -79,6 +79,10 @@ footer{
 
 }
 
+ul{
+    margin: 0%;
+    padding: 0%;
+}
 @media only screen and (max-width:600px){
     header{
         height: 200px;
