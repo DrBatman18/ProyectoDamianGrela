@@ -1,3 +1,8 @@
+h2 {
+  font-family: Air Americana;
+  color: red;
+  font-size: 40px; }
+
 * {
   margin: 0%;
   padding: 0%; }
@@ -45,7 +50,7 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center; }
 
 .home_nosotros {
@@ -231,59 +236,93 @@ footer {
       list-style: none; }
   .home_tienda {
     background-color: black;
+    height: 9000px;
     grid-template-columns: 90%;
-    grid-template-rows: 25% 25% 25%;
-    grid-template-areas: "hometienda1" "hometienda2"  "hometienda3";
+    grid-template-rows: 0,5% 3% 3% 3% 3% 3% 3% 0,5% 3% 0,5% 3% 3% 3% 0,5% 3% 3% 3% 3% 3% 3% 0,5% 3% 3% 3% 3% 0,5% 3% 3% 3%;
+    grid-template-areas: "hometienda1"  "hometienda2" "hometienda3" "hometienda4" "hometienda5" "hometienda6" "hometienda7" "hometienda8" "hometienda9" "hometienda10"  "hometienda11"  "hometienda12" "hometienda13"  "hometienda14"  "hometienda15" "hometienda16"  "hometienda17"  "hometienda18" "hometienda19"  "hometienda20" "hometienda21" "hometienda22"  "hometienda23"  "hometienda24" "hometienda25"  "hometienda26"  "hometienda27" "hometienda28"  "hometienda29";
     align-content: space-around;
     justify-content: space-around; }
-    .home_tienda .tienda_uno {
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: space-evenly;
-      align-items: center; }
-      .home_tienda .tienda_uno .parrafo_t1 {
-        grid-area: hometienda1;
-        color: white;
-        font-size: 20px; }
-      .home_tienda .tienda_uno .img_t1 {
-        grid-area: hometienda1;
-        height: 70%;
-        width: 70%; }
-      .home_tienda .tienda_uno .bt1 {
-        grid-area: hometienda1;
-        width: 30%; }
-    .home_tienda .tienda_dos {
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: space-evenly;
-      align-items: center; }
-      .home_tienda .tienda_dos .parrafo_t2 {
-        grid-area: hometienda2;
-        color: white;
-        font-size: 20px; }
-      .home_tienda .tienda_dos .img_t2 {
-        grid-area: hometienda2;
-        height: 70%;
-        width: 70%; }
-      .home_tienda .tienda_dos .bt2 {
-        grid-area: hometienda2;
-        width: 30%; }
-    .home_tienda .tienda_tres {
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: space-evenly;
-      align-items: center; }
-      .home_tienda .tienda_tres .parrafo_t3 {
-        grid-area: hometienda3;
-        color: white;
-        font-size: 20px; }
-      .home_tienda .tienda_tres .img_t3 {
-        grid-area: hometienda3;
-        height: 70%;
-        width: 70%; }
-      .home_tienda .tienda_tres .bt3 {
-        grid-area: hometienda3;
-        width: 30%; }
+    .home_tienda .titulo_plato {
+      font-family: Air Americana;
+      color: white;
+      font-size: 20px;
+      margin: 0%;
+      padding: 0%; }
+    .home_tienda .parrafo_plato {
+      color: white;
+      font-size: 15px;
+      text-align: center; }
+    .home_tienda .btn_plato:hover {
+      width: 50%;
+      background-color: red; }
+    .home_tienda .img_tienda {
+      height: 50%;
+      width: 50%;
+      object-fit: contain; }
+    .home_tienda .titulo_entradas {
+      text-align: center;
+      grid-area: hometienda1; }
+    .home_tienda .plato-uno {
+      grid-area: hometienda2; }
+    .home_tienda .plato-dos {
+      grid-area: hometienda3; }
+    .home_tienda .plato-tres {
+      grid-area: hometienda4; }
+    .home_tienda .plato-cuatro {
+      grid-area: hometienda5; }
+    .home_tienda .plato-cinco {
+      grid-area: hometienda6; }
+    .home_tienda .plato-seis {
+      grid-area: hometienda7; }
+    .home_tienda .titulo_ensalada {
+      text-align: center;
+      grid-area: hometienda8; }
+    .home_tienda .plato-siete {
+      grid-area: hometienda9; }
+    .home_tienda .titulo_pokebowls {
+      text-align: center;
+      grid-area: hometienda10; }
+    .home_tienda .plato-ocho {
+      grid-area: hometienda11; }
+    .home_tienda .plato-nueve {
+      grid-area: hometienda12; }
+    .home_tienda .plato-diez {
+      grid-area: hometienda13; }
+    .home_tienda .titulo_sushirolls {
+      text-align: center;
+      grid-area: hometienda14; }
+    .home_tienda .plato-once {
+      grid-area: hometienda15; }
+    .home_tienda .plato-doce {
+      grid-area: hometienda16; }
+    .home_tienda .plato-trece {
+      grid-area: hometienda17; }
+    .home_tienda .plato-catorce {
+      grid-area: hometienda18; }
+    .home_tienda .plato-quince {
+      grid-area: hometienda19; }
+    .home_tienda .plato-dieciseis {
+      grid-area: hometienda20; }
+    .home_tienda .titulo_hotrolls {
+      text-align: center;
+      grid-area: hometienda21; }
+    .home_tienda .plato-diecisiete {
+      grid-area: hometienda22; }
+    .home_tienda .plato-dieciocho {
+      grid-area: hometienda23; }
+    .home_tienda .plato-diecinueve {
+      grid-area: hometienda24; }
+    .home_tienda .plato-veinte {
+      grid-area: hometienda25; }
+    .home_tienda .titulo_hollywoks {
+      text-align: center;
+      grid-area: hometienda26; }
+    .home_tienda .plato-veintiuno {
+      grid-area: hometienda27; }
+    .home_tienda .plato-veintidos {
+      grid-area: hometienda28; }
+    .home_tienda .plato-veintitres {
+      grid-area: hometienda29; }
   .home_nosotros {
     background-color: black;
     height: 1000px;
@@ -459,8 +498,8 @@ footer {
       list-style: none; }
   .home_tienda {
     background-color: black;
-    height: 3000px;
-    grid-template-columns: 32% 32% 32%;
+    height: 3700px;
+    grid-template-columns: 30% 30% 30%;
     grid-template-rows: 1% 10% 10% 1% 10% 1% 10% 1% 10% 10% 1% 10% 10% 1% 10%;
     grid-template-areas: "hometienda1 hometienda2 hometienda3" "hometienda4 hometienda5 hometienda6" "hometienda7 hometienda8 hometienda9" "hometienda10 hometienda11 hometienda12" "hometienda13 hometienda14 hometienda15" "hometienda16 hometienda17 hometienda18" "hometienda19 hometienda20 hometienda21" "hometienda22 hometienda23 hometienda24" "hometienda25 hometienda26 hometienda27" "hometienda28 hometienda29 hometienda30" "hometienda31 hometienda32 hometienda33" "hometienda34 hometienda35 hometienda36" "hometienda37 hometienda38 hometienda39" "hometienda40 hometienda41 hometienda42" "hometienda43 hometienda44 hometienda45";
     align-content: space-around;
@@ -482,11 +521,70 @@ footer {
       width: 50%;
       background-color: red; }
     .home_tienda .img_tienda {
-      height: 60%;
-      width: 60%;
+      height: 50%;
+      width: 50%;
       object-fit: contain; }
     .home_tienda .plato-uno {
       grid-area: hometienda4; }
+    .home_tienda .plato-dos {
+      grid-area: hometienda5; }
+    .home_tienda .plato-tres {
+      grid-area: hometienda6; }
+    .home_tienda .plato-cuatro {
+      grid-area: hometienda7; }
+    .home_tienda .plato-cinco {
+      grid-area: hometienda8; }
+    .home_tienda .plato-seis {
+      grid-area: hometienda9; }
+    .home_tienda .titulo_ensalada {
+      text-align: center;
+      grid-area: hometienda11; }
+    .home_tienda .plato-siete {
+      grid-area: hometienda14; }
+    .home_tienda .titulo_pokebowls {
+      text-align: center;
+      grid-area: hometienda17; }
+    .home_tienda .plato-ocho {
+      grid-area: hometienda19; }
+    .home_tienda .plato-nueve {
+      grid-area: hometienda20; }
+    .home_tienda .plato-diez {
+      grid-area: hometienda21; }
+    .home_tienda .titulo_sushirolls {
+      text-align: center;
+      grid-area: hometienda23; }
+    .home_tienda .plato-once {
+      grid-area: hometienda25; }
+    .home_tienda .plato-doce {
+      grid-area: hometienda26; }
+    .home_tienda .plato-trece {
+      grid-area: hometienda27; }
+    .home_tienda .plato-catorce {
+      grid-area: hometienda28; }
+    .home_tienda .plato-quince {
+      grid-area: hometienda29; }
+    .home_tienda .plato-dieciseis {
+      grid-area: hometienda30; }
+    .home_tienda .titulo_hotrolls {
+      text-align: center;
+      grid-area: hometienda32; }
+    .home_tienda .plato-diecisiete {
+      grid-area: hometienda34; }
+    .home_tienda .plato-dieciocho {
+      grid-area: hometienda36; }
+    .home_tienda .plato-diecinueve {
+      grid-area: hometienda37; }
+    .home_tienda .plato-veinte {
+      grid-area: hometienda39; }
+    .home_tienda .titulo_hollywoks {
+      text-align: center;
+      grid-area: hometienda41; }
+    .home_tienda .plato-veintiuno {
+      grid-area: hometienda43; }
+    .home_tienda .plato-veintidos {
+      grid-area: hometienda44; }
+    .home_tienda .plato-veintitres {
+      grid-area: hometienda45; }
   .home_nosotros {
     background-color: black;
     height: 700px;
