@@ -612,7 +612,7 @@ ul {
     justify-content: space-around; }
     .home_nosotros .titulo_nosotros {
       color: white;
-      margin: 5%; }
+      padding: 3%; }
     .home_nosotros .parrafo_nos1 {
       color: white;
       margin: 5%;
