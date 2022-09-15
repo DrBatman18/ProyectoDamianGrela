@@ -22,7 +22,8 @@ $color_texto_parrafo: white;
 @mixin parrafo_platos($color_letra, $tamanio_letra) {
     color: $color_letra;
     font-size: $tamanio_letra;
-    text-align: center;    
+    text-align: center;
+    font-style: italic;    
 }
 
 

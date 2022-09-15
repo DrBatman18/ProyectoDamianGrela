@@ -22,17 +22,17 @@
         margin: 0%;
 
         .boton_logo{
-            align-content: center;
-            justify-content: center;
+            align-items: center;
+            
             .logo_home{
                 position: relative;
-                height: 100%;
+                height: 90%;
                 }              
             img{ 
                 position:relative;
                 height: 100%;
                 width: 100%; 
-                object-fit: contain;             
+                object-fit: contain;                             
             }
         }
 
@@ -48,6 +48,8 @@
                 align-items: center;
                 justify-content: center;
                 padding: 0%;
+                list-style: none;
+                                
             }
 
                     
@@ -56,7 +58,13 @@
                 list-style-type: none;
                 padding: 7px;   
                 font-family: 'Air Americana';
-                font-size: 20px;                              
+                font-size: 20px;
+                
+                &:hover{
+                    border: solid 1px;
+                    color: red;
+                }
+                
             }
                             
                 
@@ -402,31 +410,34 @@
 
     .home_nosotros{
         background-color: black;
-        height: 1000px;
-        grid-template-columns: 90%;
-        grid-template-rows: 60%;
-        grid-template-areas: "homenos1"; 
+        height: 700px;
+        flex-direction: column;
+        flex-wrap: nowrap; 
+        align-items: center;
         align-content: space-around;                            
-        justify-content: center;
+        justify-content: space-around;
 
-        .nosotros_uno{
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: space-evenly;
-            padding: 5% 0% 5% 0%;
+        
+            .titulo_nosotros{
+                color:white;
+                margin: 5%;
+            }
 
             .parrafo_nos1{
                 color: $color_texto_parrafo;
+                margin: 5%;
                 text-align: center;
+                font-style: italic;
+                font-size: 15px;
             }        
             .img_nos1{
-                height: 50%;
-                width: 70%;
+                height: 90%;
+                width: 90%;
+                object-fit: contain;
             }
-        }       
+             
         
-    }      
+    }
 }
 
 @media only screen and (min-width:600px){
@@ -477,13 +488,20 @@
             .lista_nav {            
                 position: relative;  
                 list-style-type: none;
-                padding: 10px;  
+                margin: 10px;
+                padding: 0% 1% 0% 1%;  
                 font-family: 'Air Americana';
-                font-size: 35px;   
+                font-size: 35px;
+                
+                &:hover{
+                    border: solid 1px;
+                    color: red;
+                }   
 
                 .nombre_boton_nav{            
                     text-decoration: none;
-                    color: $color_texto_nav;                
+                    color: $color_texto_nav; 
+                                   
                 }                
             }            
         }              
@@ -798,27 +816,32 @@
  
     .home_nosotros{
         background-color: black;
-        height: 700px;
-        grid-template-columns: 90%;
-        grid-template-rows: 60%;
-        grid-template-areas: "homenos1"; 
+        height: 1000px;
+        flex-direction: column;
+        flex-wrap: nowrap; 
+        align-items: center;
         align-content: space-around;                            
-        justify-content: center;
+        justify-content: space-around;
+
         
-        .nosotros_uno{
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: space-evenly;
-            
+            .titulo_nosotros{
+                color:white;
+                margin: 5%;
+            }
+
             .parrafo_nos1{
                 color: $color_texto_parrafo;
+                margin: 5%;
                 text-align: center;
-            }
+                font-style: italic;
+                font-size: 20px;
+            }        
             .img_nos1{
-                height: 50%;
-                width: 70%;
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
             }
-        }
-    }   
+             
+        
+    }
 }
